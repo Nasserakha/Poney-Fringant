@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>connexion</title>
+</head>
+<body>
+
+    <main class="area">
+
+        <section class="login">
+            
+            <header>
+                <img id="logo" src="./assets/profil/donkey.png" alt="">
+                <a href="./index.html"><h1 class="title1">Bienvenue au Poney Fringant</h1></a>
+            </header>
+
+            <div class="form">
+                <h2>Connexion</h2>
+                <span>Pas encore inscrit? <a href="inscription.html">Inscrivez-vous</a></span>
+            </div>
+
+            <form id="log-form" action="login.php" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Email" required="required" autocomplete="off">
+                </div>
+                <div>
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" name="password" placeholder="Mot de passe" required="required" autocomplete="off">
+                </div>
+                <input type="submit" name="formconn" value="Connexion">
+            </form>
+        
+        </section>
+
+    </main>
+
+</body>
+
+</html>

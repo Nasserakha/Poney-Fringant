@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Inscription</title>
+</head>
+<body>  
+
+    <main class="area">
+
+        <section class="register">
+
+            <header>
+                <img id="logo" src="./assets/profil/donkey-1299389_1280.png" alt="">
+                <a href="./index.html"><h1 class="title1">Bienvenue au Poney Fringant</h1></a>
+            </header>
+
+            <div class="form">
+                <h2>Inscription</h2>
+                <span>Déjà membre? <a href="connexion.html">Connectez-vous</a></span>
+            </div>
+
+            <form id="reg-form" name="reg-form" action="register.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Informations personnelles : </legend>
+                        <div>
+                            <label for="adherent">N° adhérent:</label>
+                            <input type="text" name="adh-num" placeholder="adh-2045-..." required="required" autocomplete="off">
+                        </div>
+                
+                        <div>
+                            <label for="pseudo">Pseudo:</label>
+                            <input type="text" name="pseudo" placeholder="Pippin" required="required" autocomplete="off">
+                        </div>
+                            
+                        <div class="row">            
+                            <div>
+                                <label for="Prenom">Prénom:</label>
+                                <input type="text" name="prenom" placeholder="Perigrin" required="required" autocomplete="off">
+                            </div>
+                            <div>
+                                <label for="nom">Nom:</label>
+                                <input type="text" name="nom" placeholder="TOUC" required="required" autocomplete="off">
+                            </div>
+                        </div>            
+                    </fieldset>
+    
+                    <fieldset>
+                    <legend>Informations de contact : </legend>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" placeholder="poney@fringant.lotr" required="required" autocomplete="off">
+                        </div>
+                        <div>
+                            <label for="numero">N° Téléphone:</label>
+                            <input type="tel" name="numero" placeholder="06 06 06 06 06" autocomplete="off">
+                        </div>
+                        <div>
+                            <label for="adresse">Adresse:</label>
+                            <input type="text" name="adresse" placeholder="Cul-de-Sac..." autocomplete="off">
+                        </div>
+    
+                        <div>
+                            <label for="pseudo">Code Postal:</label>
+                            <input type="zip" name="zip" placeholder="00000" autocomplete="off">
+                        </div>
+                        <div>
+                            <label for="ville">Ville:</label>
+                            <input type="ville" name="ville" placeholder="Hobbiton" autocomplete="off">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                    <legend>Informations du compte : </legend>
+                        <div>
+                            <label for="password">Mot de passe:</label>
+                            <input type="password" name="password" placeholder="Mot de passe" required="required" autocomplete="off">
+                        </div>
+                        <div>
+                            <label for="password">Confirmation du mot de passe:</label>
+                            <input type="password" name="password_retype" placeholder="Confirmez le mot de passe" required="required" autocomplete="off">
+                        </div>
+                    </fieldset>    
+
+                    <input type="submit" name="forminscr" value="Inscription">                 
+            </form>
+                   
+        </section>
+
+    </main>
+   
+</body>
+</html>l
